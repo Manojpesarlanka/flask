@@ -27,7 +27,7 @@ def students():
     if request.method == 'POST':
         new_name = request.form['name']
         new_sec = request.form['sec']
-        iD = students_list[-1][id]+1
+        iD = students_list[-1]['id']+1
 
         new_obj = {
             'id': iD,
